@@ -1,0 +1,16 @@
+{
+  "datacenter": "localhost",
+  "data_dir": "/consul/data",
+  "log_level": "DEBUG",
+  "server": true,
+  "ui": true,
+  "watches": [
+    {
+        "type": "checks",
+        "handler": "/usr/bin/health-check-handler.sh"
+    }
+  ],
+  "telemetry": {
+     "statsite_address": "127.0.0.1:2180"
+  }
+}
